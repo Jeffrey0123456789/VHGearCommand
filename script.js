@@ -1,3 +1,17 @@
+function add() {
+    const node = document.createElement("li");
+    const textnode = document.createTextNode(Math.random());
+    node.appendChild(textnode);
+    document.getElementById("list").appendChild(node);
+}
+
+function remove() {
+    const nodes = document.getElementById("list").childNodes;
+    const node = nodes[nodes.length - 1];
+    document.getElementById("list").removeChild(node);
+}
+
+
 const newMod =
 '<label>Type:</label>' +
 '<select>' +
